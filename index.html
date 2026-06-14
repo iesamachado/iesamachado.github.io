@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAM Porfolio | Proyectos Innovadores</title>
+    <meta name="description" content="Porfolio de proyectos web STEAM publicados en iesamachado.github.io. Descubre innovadoras herramientas educativas como maps3d, moon, giomAi y más.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar / Header -->
+        <header class="sidebar">
+            <div class="sidebar-content">
+                <div class="brand">
+                    <span class="badge">Portfolio 2026</span>
+                    <div style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; margin-top: 1rem;">IES Antonio Machado</div>
+                    <h1 class="logo">STEAM<br><span>4.0</span></h1>
+                </div>
+                <h2 class="highlight-text">Innovación Educativa</h2>
+                <p class="subtitle">Explorando la intersección entre tecnología y diseño interactivo en el aula.</p>
+                <div class="scroll-indicator">
+                    <span>Explora los proyectos</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="footer-sidebar">
+                <p>&copy; <span id="current-year"></span> IES Antonio Machado</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <!-- Vista de Cuadrícula (Home) -->
+            <div id="filters-container" class="filters-container" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <!-- Botones de filtro inyectados aquí -->
+            </div>
+            
+            <div id="portfolio-grid" class="bento-grid">
+                <!-- Project cards injected here -->
+            </div>
+
+            <!-- Vista de Proyecto Individual (SPA) -->
+            <div id="project-view" class="project-view" style="display: none;">
+                <button id="btn-back" class="btn-back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Volver al Porfolio
+                </button>
+                
+                <div class="project-view-content">
+                    <div class="project-image-container">
+                        <img id="project-image" src="" alt="Captura del proyecto">
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-actions" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                            <a href="#" id="project-link" class="btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top: 0;">Visitar Web</a>
+                            <a href="#" id="project-repo" class="btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top: 0; background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                Ver Repositorio
+                            </a>
+                        </div>
+
+                        <div class="tags" id="project-tags"></div>
+                        <h2 id="project-title">Título Proyecto</h2>
+                        <p class="subtitle" id="project-summary" style="margin-bottom: 2rem; color: #fff;">Resumen del proyecto</p>
+                        
+                        <div id="project-extended-content">
+                            <!-- Contenido enriquecido generado por JS irá aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Interactive Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
